@@ -15,7 +15,7 @@ public class SyndicController {
         this.syndicService = syndicService;
     }
 
-    @DeleteMapping(path = "suppSyndic/{id}")
+    @DeleteMapping(path = "/suppSyndic/{id}")
     public void supprimerSyndic(@PathVariable Long id) {
         syndicService.supprimerSyndic(id);
     }

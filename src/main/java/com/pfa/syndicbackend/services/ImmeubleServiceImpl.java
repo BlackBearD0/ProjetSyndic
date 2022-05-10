@@ -10,6 +10,11 @@ import java.util.List;
 @Service
 @Transactional
 public class ImmeubleServiceImpl implements ImmeubleService {
+
+    public ImmeubleServiceImpl(ImmeubleRepository immeubleRepository) {
+        this.immeubleRepository = immeubleRepository;
+    }
+
     private ImmeubleRepository immeubleRepository;
 
     @Override

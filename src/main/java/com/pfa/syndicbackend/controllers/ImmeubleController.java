@@ -15,7 +15,7 @@ public class ImmeubleController {
         this.immeubleService = immeubleService;
     }
 
-    @DeleteMapping(path = "suppImmeuble/{id}")
+    @DeleteMapping(path = "/suppImmeuble/{id}")
     public void supprimerImmeuble(@PathVariable Long id) {
         immeubleService.supprimerImmeuble(id);
     }

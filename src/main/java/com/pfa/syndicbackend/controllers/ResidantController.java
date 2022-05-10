@@ -15,7 +15,7 @@ public class ResidantController {
         this.residantService = residantService;
     }
 
-    @DeleteMapping(path = "suppResidant/{id}")
+    @DeleteMapping(path = "/suppResidant/{id}")
     public void supprimerResidant(@PathVariable Long id) {
         residantService.supprimerResidant(id);
     }

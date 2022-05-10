@@ -15,7 +15,7 @@ public class RevenueController {
         this.revenueService = revenueService;
     }
 
-    @DeleteMapping(path = "suppRevenue/{id}")
+    @DeleteMapping(path = "/suppRevenue/{id}")
     public void supprimerRevenue(@PathVariable Long id) {
         revenueService.supprimerRevenue(id);
     }

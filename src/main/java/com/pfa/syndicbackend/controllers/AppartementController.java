@@ -35,7 +35,7 @@ public class AppartementController {
 //        return appartementService.updateAppartement(appartement);
 //    }
 
-    @DeleteMapping(path = "suppAppartement/{id}")
+    @DeleteMapping(path = "/suppAppartement/{id}")
     public void supprimerAppartement(@PathVariable Long id) {
         appartementService.supprimerAppartement(id);
     }

@@ -17,7 +17,7 @@ public class DepenseController {
     }
 
 
-    @DeleteMapping(path = "suppDepense/{id}")
+    @DeleteMapping(path = "/suppDepense/{id}")
     public void supprimerDepense(@PathVariable Long id) {
         depenseService.supprimerDepense(id);
     }

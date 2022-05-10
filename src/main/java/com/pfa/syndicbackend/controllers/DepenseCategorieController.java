@@ -15,7 +15,7 @@ public class DepenseCategorieController {
         this.depenseCategorieService = depenseCategorieService;
     }
 
-    @DeleteMapping(path = "suppDepenseCategorie/{id}")
+    @DeleteMapping(path = "/suppDepenseCategorie/{id}")
     public void supprimerDepenseCategorie(@PathVariable Long id) {
 
         depenseCategorieService.supprimerDepenseCategorie(id);
